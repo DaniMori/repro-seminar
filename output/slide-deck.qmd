@@ -1,0 +1,225 @@
+---
+title:       "Version control for reproducible research and collaboration"
+subtitle:    "An overview of git + Github in scientific workflows"
+date:        2023-06-09
+date-format: short
+author:      "[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)"
+format:
+  revealjs:
+    slide-number:            true
+    fig-align:               center
+    fig-cap-location:        bottom
+    incremental:             true
+    link-external-newwindow: true
+    preview-links:           false
+    preload-iframes:         true
+    self-contained:          true
+    theme:                   simple
+    view-distance:                3
+---
+
+# Intro: Why version control?
+
+```{=html}
+<!--  ## Introduction
+
+<br>
+
+[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)
+
+Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
+```
+## Problem
+
+![](../www/phd_versions.png){fig-align="center" height="40%"}
+
+## Problem
+
+> -   What is the most updated version?
+
+-   When did this code / draft / protocol / etc. change, and why?
+
+-   Does this version have the last changes?
+
+-   Did I take into account the reviews of all co-authors?
+
+</br>
+
+-   other... ?
+
+# Solutions
+
+## Manual versioning
+
+::: columns
+::: column
+![](../www/swith_to_vc.jpg){fig-align="center" height="100%"}
+:::
+
+::: column
+</br>
+
+-   Shared files (cloud service / network units)
+
+</br>
+
+-   File naming conventions
+:::
+:::
+
+## Manual versioning
+
+</br>
+
+> -   Errors
+
+-   Work lost
+
+-   Duplicated effort
+
+</br>
+
+-   other problems... ?
+
+## Version control
+
+![](../www/flowchart.png){fig-align="center" height="100%"}
+
+# Why version control?
+
+::: notes
+Going back to my initial question
+:::
+
+## Collaboration
+
+![](../www/git_server.png){fig-align="center" height="100%"}
+
+::: notes
+Most useful feature; nowadays every research project is collaborative
+:::
+
+## History of changes
+
+::: columns
+::: column
+![](../www/version_history.jpeg){fig-align="center" height="100%"}
+:::
+
+::: column
+-   What
+
+-   When
+
+-   Who
+
+-   Why
+:::
+:::
+
+::: notes
+What has changes, but also when (what results are affected and/or need to be
+updated), by whom, so we can gather more information about why the change was
+made. This can help provide a lot of knowledge.
+
+Also, the history of changes is always available (no matter what)
+:::
+
+## History of changes
+
+... can be a lifeline
+
+![](../www/vc-xkcd.jpg){fig-align="center" height="100%"}
+
+::: notes
+Accidentally deleting work is a common and dramatic error. VC works as a backup
+system
+:::
+
+## History of changes
+
+Don't be afraid of "moving forward"
+
+![](../www/documentation.png){fig-align="center" height="100%"}
+
+::: notes
+This means we don't need to be held back to make changes by fear of deleting
+something important.
+
+Also, we don't need to be documenting our "previous versions" in not very
+efficient ways, as this poor guy is doing.
+:::
+
+## Parallel histories
+
+![](../www/back-to-the-future-ii.jpg){fig-align="center" height="100%"}
+
+## Parallel histories
+
+Branching:
+
+![](../www/branchinggraphic.png){fig-align="center" height="100%"}
+
+-   Review
+
+-   Experiment
+
+-   Integrate / dismiss
+
+::: notes
+The ability to do "experiments" or "suggest changes" in parallel, without
+affecting the main outcome of our project, is a very prominent feature of VC.
+
+This way, we can "change things" without the fear of conflicting with what is
+already done. Then, if we are satisfied with the new changes and gather enough
+consensus, we can merge these new changes with the main history, so the changes
+go to the final output.
+:::
+
+## Reproducibility
+
+::: columns
+::: column
+![](../www/the_difference.png){fig-align="center" height="100%"}
+:::
+
+::: column
+-   ... of results
+
+-   Replicability
+
+-   Transparency
+:::
+:::
+
+::: notes
+Results are reproducible, of course.
+
+We can run our code (or whole project, for that matter) and see if we arrive at
+the same results.
+
+Moreover, replicability is easy: We "only" need the same code and a new dataset.
+
+But there is something beyond that (which I like to call transparency)
+:::
+
+## Reproducibility
+
+> When most people think about design, they often think of it as just the final
+> output: the screens. What they don't see, or aren't aware of, is all of the
+> work that goes into identifying and articulating the problem, gathering data,
+> planning, consensus-building, decision-making, and conversations with
+> stakeholders that ultimately lead to that final output. All of these things
+> make up the design process.\
+
+--Josh Brewer
+
+::: notes
+This quote is taken from a web design blog. But one can't stress enough how true
+it is when applied to scientific research.
+
+This is, in my opinion, the most important feature of version control:
+Reproducibility (or better, transparency) of workflows, not only results.
+:::
+
+# How to...
