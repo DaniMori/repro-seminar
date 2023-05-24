@@ -212,10 +212,6 @@ contribute, and reuse the work of one another.
 -   What
 
 -   When
-
--   Why
-
--   Who
 :::
 :::
 
@@ -234,9 +230,27 @@ With this timeline, we have the information about what has changed,...
 but also when (for example, seeing the timeline we may know what results are
 affected if an analysis script has changed, and whether they need to be
 updated),...
+:::
 
-(NEXT)
+## History of changes
 
+::: columns
+::: column
+![](../www/Nobel-Prize-Timeline.png){fig-align="center" height="100%"}
+:::
+
+::: column
+> -   What
+
+> -   When
+
+> -   Why
+
+-   Who
+:::
+:::
+
+::: notes
 why (this can help provide a lot of knowledge),
 
 (NEXT)
@@ -250,7 +264,7 @@ breakthrough when dealing with ghost authorship.
 
 ## History of changes
 
-... can be a lifeline
+... can be a life saver
 
 ![](../www/vc-xkcd.jpg){fig-align="center" height="100%"}
 
