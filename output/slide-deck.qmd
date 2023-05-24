@@ -33,6 +33,18 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 
 ![](../www/phd_versions.png){fig-align="center" height="40%"}
 
+::: notes
+What I'm going to talk about in this seminar is the problem illustrated in this
+comic strip. Not the frustration of having to go through several rounds of
+reviews, of course, but how to manage and keep track of all the changes and
+versions his thesis has gone all throughout.
+
+Have you ever encountered yourself with such a problem?
+
+Some of the most common problems one finds when trying to manage the different
+versions of their work are...
+:::
+
 ## Problem
 
 > -   What is the most updated version?
@@ -47,7 +59,44 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 
 -   other... ?
 
+::: notes
+For example, you may be asked by a colleague, reviewer, or an interested reader
+about your analysis... what was the code you wrote and used, exactly? Also, what
+was the state of your environment (R packages, other dependencies) at the time
+you generated your results?
+
+(NEXT)
+
+You may also have changed your code at a certain point. Even if you are sure
+about which version is used for what, do you know exactly why there are
+different versions at all?
+
+Are they all useful, or some of them are just backup copies?
+
+How did you come up with this version, and why? Did a previous one not work, or
+was it wrong for some reason?
+
+(NEXT)
+
+After several rounds of reviews, are you sure you are working on the latest
+version?
+
+(NEXT)
+
+And, have you integrated the changes and suggestions of all your co-authors?
+
+(NEXT)
+
+What other problems have you found along in your research daily work?
+
+(LET TIME FOR DEBATE)
+:::
+
 # Solutions
+
+::: notes
+So, there are several ways of sorting this out.
+:::
 
 ## Manual versioning
 
@@ -67,6 +116,25 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 :::
 :::
 
+::: notes
+The most obvious one is manual versioning, which most of us are probably used
+to.
+
+(NEXT)
+
+To allow sharing files, we can store them in cloud services or network units...
+
+(NEXT)
+
+and implement some file naming conventions to keep track of the different
+versions. Unlike this guy (picture), we can e.g. preffix the naem with a date,
+suffix with a version number, or with the initials of the last reviewer...
+
+Do you use any service or system to share files, and/or file naming conventions?
+
+(LET TIME FOR DEBATE)
+:::
+
 ## Manual versioning
 
 </br>
@@ -81,14 +149,43 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 
 -   other problems... ?
 
+::: notes
+We probably have suffered from some problems with manual versioning, like
+errors. The most obvious one, accidentally deleting a file and having to start
+again at a previous point.
+
+(NEXT)
+
+But not only. It may happen that we just don't find a previous version, so we
+may need to redo some of the work.
+
+(NEXT)
+
+Or worse than that: We do a lot of work, e.g. writing or updating a script, only
+to find out that a colleague had done the same (or something similar) before.
+
+(NEXT)
+
+What other problemas have you found when using a manual versioning system?
+
+(LET TIME FOR DEBATE)
+:::
+
 ## Version control
 
 ![](../www/flowchart.png){fig-align="center" height="100%"}
 
+::: notes
+Well, for these reasons, version control systems were created. Now, going back
+to my initial question, the point would be:
+:::
+
 # Why version control?
 
 ::: notes
-Going back to my initial question
+"Should I use it?"
+
+Let's see the feature of version control systems, and why they are useful.
 :::
 
 ## Collaboration
@@ -96,14 +193,19 @@ Going back to my initial question
 ![](../www/git_server.png){fig-align="center" height="100%"}
 
 ::: notes
-Most useful feature; nowadays every research project is collaborative
+First of all: collaboration, it's most useful feature. Nowadays every research
+project is collaborative, in one way or another. Being able to collaborate
+seamlessly is something every system should allow.
+
+By using a centralized version control system, everyone in a project can share,
+contribute, and reuse the work of one another.
 :::
 
 ## History of changes
 
 ::: columns
 ::: column
-![](../www/version_history.jpeg){fig-align="center" height="100%"}
+![](../www/Nobel-Prize-Timeline.png){fig-align="center" height="100%"}
 :::
 
 ::: column
@@ -118,11 +220,19 @@ Most useful feature; nowadays every research project is collaborative
 :::
 
 ::: notes
-What has changes, but also when (what results are affected and/or need to be
-updated), by whom, so we can gather more information about why the change was
+This is an example of a timeline, with specific events at a certain point in
+time. This is the analogy you need to keep in mind to understand what a version
+control system is.
+
+In essence, it is a history of the changes in a project (or a "repository", in
+the version control jargon).
+
+With this timeline, we have the information about what has changed, but also
+when, and by whom, so we can gather more information about why the change was
 made. This can help provide a lot of knowledge.
 
-Also, the history of changes is always available (no matter what)
+For example, seeing the timeline we may know what results are affected if an
+analysis script has changed, and whether they need to be updated.
 :::
 
 ## History of changes
@@ -132,8 +242,8 @@ Also, the history of changes is always available (no matter what)
 ![](../www/vc-xkcd.jpg){fig-align="center" height="100%"}
 
 ::: notes
-Accidentally deleting work is a common and dramatic error. VC works as a backup
-system
+Also, this history is always available (no matter what). So it is a backup
+system that protects us against dramatic errors that make us lose the work done.
 :::
 
 ## History of changes
@@ -143,22 +253,33 @@ Don't be afraid of "moving forward"
 ![](../www/documentation.png){fig-align="center" height="100%"}
 
 ::: notes
-This means we don't need to be held back to make changes by fear of deleting
-something important.
+What does this means? We don't need to be held back to make changes by fear of
+deleting something important.
 
-Also, we don't need to be documenting our "previous versions" in not very
-efficient ways, as this poor guy is doing.
+Also, we don't need to be documenting our "previous versions" in obscure ways,
+as this poor guy is doing.
+
+However, if we are not sure about our changes, we can still make progress
+without fear thanks to another important feature...
 :::
 
 ## Parallel histories
 
 ![](../www/back-to-the-future-ii.jpg){fig-align="center" height="100%"}
 
+::: notes
+Do you recognize this film?
+
+(PAUSE AND EXPLAIN)
+
+This is exactly what "branching" does: Creating a "parallel history".
+:::
+
 ## Parallel histories
 
 Branching:
 
-![](../www/branchinggraphic.png){fig-align="center" height="100%"}
+![](../git-branch.PNG){fig-align="center" height="100%"}
 
 -   Review
 
@@ -167,13 +288,38 @@ Branching:
 -   Integrate / dismiss
 
 ::: notes
-The ability to do "experiments" or "suggest changes" in parallel, without
-affecting the main outcome of our project, is a very prominent feature of VC.
+The ability to "suggest changes" in parallel...
+
+(NEXT)
+
+or do "experiments", without affecting the main outcome of our project, is a
+very prominent feature of VC.
 
 This way, we can "change things" without the fear of conflicting with what is
-already done. Then, if we are satisfied with the new changes and gather enough
+already done.
+
+That's how far the "Back to the future" metaphor goes though.
+
+(NEXT)
+
+Because then, if we are satisfied with the new changes, and maybe gather enough
 consensus, we can merge these new changes with the main history, so the changes
 go to the final output.
+:::
+
+## Parallel histories
+
+Merging a branch:
+
+![](../www/merge-branch.png){fig-align="center" height="100%"}
+
+::: notes
+Or of course, we can just abandon that branch, if we thing we have come to a
+dead end, or we are not satisfied with the result.
+
+However, one thing is very important, whether we merge our parallel to the main
+history or not: Nothing is ever lost (unless we want it to, of course). And this
+is very important in research, right?
 :::
 
 ## Reproducibility
@@ -184,7 +330,7 @@ go to the final output.
 :::
 
 ::: column
--   ... of results
+> -   ... of results
 
 -   Replicability
 
@@ -193,14 +339,19 @@ go to the final output.
 :::
 
 ::: notes
-Results are reproducible, of course.
+Because our results will of course be reproducible: We can also our code (or our
+whole project, for that matter) and see if we arrive at the same results we have
+reported.
 
-We can run our code (or whole project, for that matter) and see if we arrive at
-the same results.
+(NEXT)
 
 Moreover, replicability is easy: We "only" need the same code and a new dataset.
 
-But there is something beyond that (which I like to call transparency)
+But there is something beyond that...
+
+(NEXT)
+
+which I like to call transparency.
 :::
 
 ## Reproducibility
@@ -215,8 +366,12 @@ But there is something beyond that (which I like to call transparency)
 --Josh Brewer
 
 ::: notes
-This quote is taken from a web design blog. But one can't stress enough how true
-it is when applied to scientific research.
+Have a look at this quote.
+
+It is taken from a web design blog; it is not about scientific research, but I
+can't stress enough how true it is when we apply it to scientific research.
+
+Let me read it, "translating" it to "scientific jargon".
 
 This is, in my opinion, the most important feature of version control:
 Reproducibility (or better, transparency) of workflows, not only results.
