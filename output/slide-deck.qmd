@@ -266,7 +266,7 @@ breakthrough when dealing with ghost authorship.
 
 ... can be a life saver
 
-![](../www/vc-xkcd.jpg){fig-align="center" height="100%"}
+![](../vc-Lucas.jpg){fig-align="center" height="100%"}
 
 ::: notes
 Also, this history is always available (no matter what). So it is a backup
@@ -306,7 +306,7 @@ This is exactly what "branching" does: Creating a "parallel history".
 
 Branching:
 
-![](../git-branch.PNG){fig-align="center" height="100%"}
+![](../www/git-branch.PNG){fig-align="center" height="100%"}
 
 -   Review
 
