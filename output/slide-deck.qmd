@@ -213,9 +213,9 @@ contribute, and reuse the work of one another.
 
 -   When
 
--   Who
-
 -   Why
+
+-   Who
 :::
 :::
 
@@ -227,12 +227,25 @@ control system is.
 In essence, it is a history of the changes in a project (or a "repository", in
 the version control jargon).
 
-With this timeline, we have the information about what has changed, but also
-when, and by whom, so we can gather more information about why the change was
-made. This can help provide a lot of knowledge.
+With this timeline, we have the information about what has changed,...
 
-For example, seeing the timeline we may know what results are affected if an
-analysis script has changed, and whether they need to be updated.
+(NEXT)
+
+but also when (for example, seeing the timeline we may know what results are
+affected if an analysis script has changed, and whether they need to be
+updated),...
+
+(NEXT)
+
+why (this can help provide a lot of knowledge),
+
+(NEXT)
+
+and by whom (which is important because we can gather more information about why
+a change was made, if necessary).
+
+Also, attribution is always granted. This can provide, in my opinion, a serious
+breakthrough when dealing with ghost authorship.
 :::
 
 ## History of changes
