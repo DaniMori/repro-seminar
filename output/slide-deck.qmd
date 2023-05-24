@@ -345,8 +345,7 @@ Or of course, we can just abandon that branch, if we thing we have come to a
 dead end, or we are not satisfied with the result.
 
 However, one thing is very important, whether we merge our parallel to the main
-history or not: Nothing is ever lost (unless we want it to, of course). And this
-is very important in research, right?
+history or not: Nothing is ever lost (unless we want it to, of course).
 :::
 
 ## Reproducibility
@@ -357,7 +356,7 @@ is very important in research, right?
 :::
 
 ::: column
-> -   ... of results
+-   ... of results
 
 -   Replicability
 
@@ -366,6 +365,10 @@ is very important in research, right?
 :::
 
 ::: notes
+And this is very important in research, right?
+
+(NEXT)
+
 Because our results will of course be reproducible: We can also our code (or our
 whole project, for that matter) and see if we arrive at the same results we have
 reported.
