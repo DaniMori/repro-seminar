@@ -377,4 +377,62 @@ This is, in my opinion, the most important feature of version control:
 Reproducibility (or better, transparency) of workflows, not only results.
 :::
 
+# Why not version control...?
+
+::: notes
+So we see that version control solves all and every problem we may have with
+managing our research projects, and it also allows us to have a completely
+reproducible and transparent workflow.
+
+Why is not everybody in academia using it?
+:::
+
+# 
+
+![](../www/bryan.jpg){fig-align="center" height="100%"}
+
+::: notes
+The main reason is this: Version control was built by SW engineers, for SW
+engineers... and we all know some IT people, we know they are "special"
+somehow... :)
+
+They open ugly black terminal windows, run a lot of alien, esoteric commands,
+and then they make memes like this, mocking the rest of us mortals for not
+understanding what they do!
+
+Of course one does not need to learn commands, because git (and all version
+control systems, for that matter)...
+:::
+
+# 
+
+![](../www/git-gui.jpg){fig-align="center" height="100%"}
+
+::: notes
+have graphical user interfaces to make our life simpler. Later on we will see
+how git integrates with Rstudio, which has a very simple interface for git, but
+there are other ones, that allow us to do many more things easily, without
+having to learn commands.
+
+Even though...
+:::
+
+## Learning curve
+
+![](../www/understand-git.jpg){fig-align="center" height="100%"}
+
+::: notes
+learning to use these version control systems is difficult. And it takes time.
+
+By my estimates, I would say that the investment starts paying off around the
+third article done in version control.
+:::
+
+## File types
+
+::: notes
+Version control works best with "text files". And most of us are used to work
+with binary files, most of the time.
+:::
+
 # How to...
