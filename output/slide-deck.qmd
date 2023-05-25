@@ -18,6 +18,10 @@ format:
     view-distance:                3
 ---
 
+```{r setup}
+library(htmltools)
+```
+
 # Intro: Why version control?
 
 ```{=html}
@@ -31,7 +35,7 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 ```
 ## Problem
 
-![](../www/phd_versions.png){fig-align="center" height="40%"}
+![](../www/phd_versions.png){height="40%"}
 
 ::: notes
 What I'm going to talk about in this seminar is the problem illustrated in this
@@ -47,7 +51,9 @@ versions of their work are...
 
 ## Problem
 
-> -   What is the most updated version?
+::: nonincremental
+-   Which is the most updated version?
+:::
 
 -   When did this code / draft / protocol / etc. change, and why?
 
@@ -139,7 +145,9 @@ Do you use any service or system to share files, and/or file naming conventions?
 
 </br>
 
-> -   Errors
+::: nonincremental
+-   Errors
+:::
 
 -   Work lost
 
@@ -173,11 +181,16 @@ What other problemas have you found when using a manual versioning system?
 
 ## Version control
 
-![](../www/flowchart.png){fig-align="center" height="100%"}
+![](../www/verion-control-systems.png){fig-align="center" height="100%"}
 
 ::: notes
-Well, for these reasons, version control systems were created. Now, going back
-to my initial question, the point would be:
+Well, for these reasons, version control systems were created. Thre are many
+different systems, but we are going to focus here on git, because it is open
+source, very popular among the research community, and also because it allows to
+using Github as a centralized server, which has many nice features that we will
+see later on.
+
+Now, going back to my initial question, the point would be:
 :::
 
 # Why version control?
@@ -185,7 +198,7 @@ to my initial question, the point would be:
 ::: notes
 "Should I use it?"
 
-Let's see the feature of version control systems, and why they are useful.
+Let's see the features of version control systems, and why they are useful.
 :::
 
 ## Collaboration
@@ -240,11 +253,13 @@ updated),...
 :::
 
 ::: column
-> -   What
+::: nonincremental
+-   What
 
-> -   When
+-   When
 
-> -   Why
+-   Why
+:::
 
 -   Who
 :::
@@ -266,7 +281,7 @@ breakthrough when dealing with ghost authorship.
 
 ... can be a life saver
 
-![](../vc-Lucas.jpg){fig-align="center" height="100%"}
+![](../www/vc-Lucas.jpg){fig-align="center" height="100%"}
 
 ::: notes
 Also, this history is always available (no matter what). So it is a backup
@@ -417,7 +432,7 @@ reproducible and transparent workflow.
 Why is not everybody in academia using it?
 :::
 
-# 
+## Designed for software engineering
 
 ![](../www/bryan.jpg){fig-align="center" height="100%"}
 
@@ -453,16 +468,109 @@ Even though...
 
 ::: notes
 learning to use these version control systems is difficult. And it takes time.
+This implies there will be errors, moreover in the beginning, and issues that
+will be difficult to solve.
 
-By my estimates, I would say that the investment starts paying off around the
-third article done in version control.
+To give you an estimate, I would say that the investment starts paying off
+around the third article done in version control.
 :::
 
 ## File types
 
+::: columns
+::: column
+Binary:
+
+```{r}
+tags$iframe(src = "../www/sample_wordfile.txt", width = "100%", height = 550)
+```
+:::
+
+::: column
+Text-based:
+
+```{r}
+library(htmltools)
+tags$iframe(src = "../www/sample_textfile.txt", width = "100%", height = 520)
+```
+:::
+:::
+
 ::: notes
-Version control works best with "text files". And most of us are used to work
-with binary files, most of the time.
+Another problem is that we are used to working with applications that store the
+information as binary files. For example, this is how a "Word file" looks like;
+you can open one in a notepad application and see it by yourselves.
+
+Version control works best with "text files". These are "human-readable", and
+are separated in "lines of text".
+:::
+
+## File types
+
+![](../www/commit-changes-example.png){fig-align="center"}
+
+::: notes
+In this example you can easily see why: The system identifies which lines have
+changed, and marks them as "added" or "deleted".
+:::
+
+## Time required
+
+![](../www/meaningful_message.png){fig-align="center"}
+
+::: notes
+Lastly, using version control is time-consuming. You need to dedicate effort to
+additional things, aside from your "significant work". One of them is
+documenting "why" you do the changes you do...
+:::
+
+## Time required
+
+![](../www/git-fire.jpg){fig-align="center"}
+
+::: notes
+...and another one is to actually creating an iteration ("committing" the
+changes in the git jargon), and synchronizing it with the repository ("pushing
+to the repo").
+
+Also, creating branches and merging them is time consuming, which leads us to
+the last problem: conflicts.
+:::
+
+## Conflicts
+
+![](../www/merge-conflict.png){fig-align="center"}
+
+::: notes
+These conflicts occur (usually) when two people edit the same line of the same
+file in parallel. When that happens, one needs to resolve the conflicts by
+choosing one version, the other, or a mix of both.
+:::
+
+## Conflicts
+
+![](../www/conflicts-headache.jpg){fig-align="center"}
+
+::: notes
+But more than time-consuming (which they are) merge conflicts are scary and
+annoying. But they can be avoided by having a clear understanding of what one is
+doing, and having good versioning policies, for example creating explicit rules
+for branching and committing.
+
+So after all these, one may wonder if it is worth using version control systems.
+:::
+
+## Why not version control?
+
+![](../www/marshmallow.jpg){fig-align="center"}
+
+::: notes
+In my view (and that of people who advocate for this), version control provides
+"delayed gratification". It will take more time to control your versions this
+way, and you will need to invest in learning it, but eventually it will pay off.
+
+To give you an estimate, I would say that around the third article done in
+version control you start feeling the gratification.
 :::
 
 # How to...
