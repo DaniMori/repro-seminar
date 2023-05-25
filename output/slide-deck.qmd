@@ -236,7 +236,9 @@ control system is.
 In essence, it is a history of the changes in a project (or a "repository", in
 the version control jargon).
 
-With this timeline, we have the information about what has changed,...
+With this timeline, we have the information about what has changed. There are
+even ways in which you can "version control" your environment, so that someone
+else knows for example which R packages and which versions they need to use.
 
 (NEXT)
 
@@ -295,11 +297,11 @@ Don't be afraid of "moving forward"
 ![](../www/documentation.png){fig-align="center" height="100%"}
 
 ::: notes
-What does this means? We don't need to be held back to make changes by fear of
+What does this mean? We don't need to be held back to make changes by fear of
 deleting something important.
 
 Also, we don't need to be documenting our "previous versions" in obscure ways,
-as this poor guy is doing.
+as this poor guy is doing. This implies even updating the environment.
 
 However, if we are not sure about our changes, we can still make progress
 without fear thanks to another important feature...
@@ -578,7 +580,38 @@ version control you start feeling the gratification.
 ::: notes
 So, how does version control actually work?
 
-We are going to see an example, using git and Github.
+We are going to see an example, using git.
 
-(GO TO RSTUDIO, EXAMPLE OF STAGE, COMMIT, PUSH)
+(GO TO RSTUDIO, EXAMPLE OF STAGE, COMMIT)
+
+(SHOW HISTORY)
+
+We can continue working until we are done, or we want to have the certainty that
+we have a backup copy in the Github server.
+
+(EXAMPLE OF PUSH TO SERVER)
+
+Now the commit is in the Github repository. We can go to Github and see these
+changes. Here we have a "pull request", that is a request to "merge" a certain
+branch to the "main" history. In this "pull request" we see a history of changes
+and, very conveniently, we can review the changes in this branch, compared to
+its base branch (the one we want to merge to). We can add comments, request
+changes, etc.
+:::
+
+# In summary
+
+::: notes
+Version control can save much time and effort, when one has a minimum knowledge
+of how to use it.
+
+So...
+:::
+
+## 
+
+![](../www/flowchart.png){fig-align="center"}
+
+::: notes
+Why not use it?
 :::
