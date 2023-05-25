@@ -574,3 +574,11 @@ version control you start feeling the gratification.
 :::
 
 # How to...
+
+::: notes
+So, how does version control actually work?
+
+We are going to see an example, using git and Github.
+
+(GO TO RSTUDIO, EXAMPLE OF STAGE, COMMIT, PUSH)
+:::
