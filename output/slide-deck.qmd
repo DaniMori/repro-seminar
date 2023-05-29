@@ -7,9 +7,9 @@ author:      "[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)"
 format:
   revealjs:
     slide-number:            true
-    fig-align:               center
     fig-cap-location:        bottom
-    incremental:             true
+    transition:              none
+    incremental:             false
     link-external-newwindow: true
     preview-links:           false
     preload-iframes:         true
@@ -33,9 +33,10 @@ library(htmltools)
 
 Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 ```
-## Problem
+## Problem:
 
-![](../www/phd_versions.png){height="40%"}
+![By Piled Higher and Deeper](../www/phd_versions.png){fig-align="center"
+height="600"}
 
 ::: notes
 What I'm going to talk about in this seminar is the problem illustrated in this
@@ -49,21 +50,27 @@ Some of the most common problems one finds when trying to manage the different
 versions of their work are...
 :::
 
-## Problem
+## Problem:
 
-::: nonincremental
 -   Which is the most updated version?
-:::
+
+. . .
 
 -   When did this code / draft / protocol / etc. change, and why?
 
+. . .
+
 -   Does this version have the last changes?
+
+. . .
 
 -   Did I take into account the reviews of all co-authors?
 
+. . .
+
 </br>
 
--   other... ?
+-   other ones... ?
 
 ::: notes
 For example, you may be asked by a colleague, reviewer, or an interested reader
@@ -104,21 +111,29 @@ What other problems have you found along in your research daily work?
 So, there are several ways of sorting this out.
 :::
 
-## Manual versioning
+## Manual versioning {.smaller .nonincremental}
 
 ::: columns
-::: column
+::: {.column width="60%"}
 ![](../www/swith_to_vc.jpg){fig-align="center" height="100%"}
 :::
 
-::: column
+::: {.column width="40%"}
 </br>
 
--   Shared files (cloud service / network units)
+::: fragment
+-   Shared files
+
+    -   cloud service
+
+    -   network units
+:::
 
 </br>
 
+::: fragment
 -   File naming conventions
+:::
 :::
 :::
 
@@ -141,19 +156,23 @@ Do you use any service or system to share files, and/or file naming conventions?
 (LET TIME FOR DEBATE)
 :::
 
-## Manual versioning
+## Manual versioning {.nonincremental}
 
 </br>
 
-::: nonincremental
 -   Errors
-:::
+
+. . .
 
 -   Work lost
+
+. . .
 
 -   Duplicated effort
 
 </br>
+
+. . .
 
 -   other problems... ?
 
@@ -217,14 +236,26 @@ contribute, and reuse the work of one another.
 ## History of changes
 
 ::: columns
-::: column
+::: {.column width="80%"}
 ![](../www/Nobel-Prize-Timeline.png){fig-align="center" height="100%"}
 :::
 
-::: column
+::: {.column width="20%"}
+::: fragment
 -   What
+:::
 
+::: fragment
 -   When
+:::
+
+::: fragment
+-   Why
+:::
+
+::: fragment
+-   Who
+:::
 :::
 :::
 
@@ -244,31 +275,7 @@ else knows for example which R packages and which versions they need to use.
 
 but also when (for example, seeing the timeline we may know what results are
 affected if an analysis script has changed, and whether they need to be
-updated),...
-:::
-
-## History of changes
-
-::: columns
-::: column
-![](../www/Nobel-Prize-Timeline.png){fig-align="center" height="100%"}
-:::
-
-::: column
-::: nonincremental
--   What
-
--   When
-
--   Why
-:::
-
--   Who
-:::
-:::
-
-::: notes
-why (this can help provide a lot of knowledge),
+updated),... why (this can help provide a lot of knowledge),
 
 (NEXT)
 
@@ -279,22 +286,22 @@ Also, attribution is always granted. This can provide, in my opinion, a serious
 breakthrough when dealing with ghost authorship.
 :::
 
-## History of changes
+## History of changes...
 
 ... can be a life saver
 
-![](../www/vc-Lucas.jpg){fig-align="center" height="100%"}
+![](../www/vc-Lucas.jpg){fig-align="center" height="450"}
 
 ::: notes
 Also, this history is always available (no matter what). So it is a backup
 system that protects us against dramatic errors that make us lose the work done.
 :::
 
-## History of changes
+## History of changes:
 
-Don't be afraid of "moving forward"
+Fear not "moving forward"!
 
-![](../www/documentation.png){fig-align="center" height="100%"}
+![](../www/documentation.png){fig-align="center" height="450"}
 
 ::: notes
 What does this mean? We don't need to be held back to make changes by fear of
@@ -309,7 +316,7 @@ without fear thanks to another important feature...
 
 ## Parallel histories
 
-![](../www/back-to-the-future-ii.jpg){fig-align="center" height="100%"}
+![](../www/back-to-the-future-ii.jpg){fig-align="center" height="600"}
 
 ::: notes
 Do you recognize this film?
@@ -323,7 +330,7 @@ This is exactly what "branching" does: Creating a "parallel history".
 
 Branching:
 
-![](../www/git-branch.PNG){fig-align="center" height="100%"}
+![](../www/git-branch.PNG){fig-align="center" height="620"}
 
 -   Review
 
