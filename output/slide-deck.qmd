@@ -35,8 +35,12 @@ Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
 ```
 ## Problem:
 
-![By Piled Higher and Deeper](../www/phd_versions.png){fig-align="center"
-height="600"}
+![](../www/phd_versions.png){fig-align="center" height="520"}
+
+::: aside
+*notFinal.doc* by [Piled Higher and
+Deeper](https://phdcomics.com/comics/archive.php?comicid=1531)
+:::
 
 ::: notes
 What I'm going to talk about in this seminar is the problem illustrated in this
@@ -137,6 +141,11 @@ So, there are several ways of sorting this out.
 :::
 :::
 
+::: aside
+*Git, SVN or ...?* by
+[CommitStrip](https://www.commitstrip.com/en/2013/11/05/git-svn-ou/)
+:::
+
 ::: notes
 The most obvious one is manual versioning, which most of us are probably used
 to.
@@ -200,7 +209,12 @@ What other problemas have you found when using a manual versioning system?
 
 ## Version control
 
-![](../www/verion-control-systems.png){fig-align="center" height="100%"}
+![](../www/verion-control-systems.png){fig-align="center"}
+
+::: aside
+Taken from
+[Programmerblog.net](https://programmerblog.net/what-is-version-control-system/)
+:::
 
 ::: notes
 Well, for these reasons, version control systems were created. Thre are many
@@ -222,7 +236,12 @@ Let's see the features of version control systems, and why they are useful.
 
 ## Collaboration
 
-![](../www/git_server.png){fig-align="center" height="100%"}
+![](../www/git-collaboration.png){fig-align="center" height="100%"}
+
+::: aside
+Taken from [cPanel
+blog](https://blog.cpanel.com/git-version-control-series-what-is-git/)
+:::
 
 ::: notes
 First of all: collaboration, it's most useful feature. Nowadays every research
