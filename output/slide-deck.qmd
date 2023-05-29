@@ -514,6 +514,36 @@ are separated in "lines of text".
 ::: notes
 In this example you can easily see why: The system identifies which lines have
 changed, and marks them as "added" or "deleted".
+
+For this reason, it is always better to use text-based formats. Otherwise, git
+needs to mark the whole file as "changed" when a binary file is updated. The
+"state-of-the-art" formats for scientific writing nowadays allow so-called
+literate computing, and can translate easily to word, PDF, LaTeX, etc.
+:::
+
+## File types
+
+"Rich Text Format" file type:
+
+::: columns
+::: column
+![](../www/rtf-file.png){fig-align="center"}
+:::
+
+::: column
+![](../www/commit-changes-RTF.png){fig-align="center"}
+:::
+:::
+
+::: notes
+However, if you "insisted" on using Word for drafting manuscripts, a good
+alternative could be to use "RTF" files. These store information in text format,
+although with a lot of code and not very intelligible format.
+
+Here you see an example of a very simple commit, that only corrects an erratum,
+"manucript" by "manuscript", so it justs adds a single character, an "s". But
+you can see that it generates a lot of changes in the file. However, this is
+better than nothing.
 :::
 
 ## Time required
