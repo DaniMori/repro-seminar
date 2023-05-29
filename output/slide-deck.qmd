@@ -546,6 +546,25 @@ you can see that it generates a lot of changes in the file. However, this is
 better than nothing.
 :::
 
+## Oversharing
+
+![](../www/oversharing.png){fig-align="center"}
+
+::: notes
+Another important source of concern is the possibility to "version" sensitive
+information accidentally. Because a repository is usually shared among
+colleagues, and eventually can be made public to share it with the whole
+research community, those data should always be kept out of repositories.
+
+Version control has the risk of exposing passwords or research participant data,
+due to human errors. But these risks are mitigated by having a good repository
+structure and file access policies.
+
+"Ignore files", relative paths to external folders, and private repositories are
+the tools to avoid these errors. And if they happen, commits can always be
+deleted from the history.
+:::
+
 ## Time required
 
 ![](../www/meaningful_message.png){fig-align="center"}
