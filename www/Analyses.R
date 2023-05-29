@@ -1,6 +1,5 @@
 # Libraries:
 library(tidyverse)
-library(countrycode)
 
 # Load data:
 dataset <- read_csv2("www/some_data.csv")
