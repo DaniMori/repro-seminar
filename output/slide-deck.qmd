@@ -807,7 +807,15 @@ its base branch (the one we want to merge to). We can add comments, request
 changes, etc.
 :::
 
-# In summary
+## In summary
+
+<br>
+
+![](../www/flowchart.png){fig-align="center" height="420"}
+
+::: aside
+From [Soundsoftware.co.uk](http://soundsoftware.ac.uk/why-version-control)
+:::
 
 ::: notes
 Version control can save much time and effort, when one has a minimum knowledge
@@ -816,13 +824,7 @@ of how to use it.
 So...
 :::
 
-## Thanks! - Tack så mycket! - ¡Gracias!
-
-![](../www/flowchart.png){fig-align="center" height="450"}
-
-::: aside
-From [Soundsoftware.co.uk](http://soundsoftware.ac.uk/why-version-control)
-:::
+# Thanks! - Tack så mycket! - ¡Gracias!
 
 ::: notes
 Why not use it?
