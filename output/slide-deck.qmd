@@ -278,6 +278,11 @@ contribute, and reuse the work of one another.
 :::
 :::
 
+::: aside
+Taken from [Office
+Timeline](https://www.officetimeline.com/blog/nobel-prize-timeline)
+:::
+
 ::: notes
 This is an example of a timeline, with specific events at a certain point in
 time. This is the analogy you need to keep in mind to understand what a version
@@ -311,6 +316,10 @@ breakthrough when dealing with ghost authorship.
 
 ![](../www/vc-Lucas.jpg){fig-align="center" height="450"}
 
+::: aside
+Taken from [Daniel Korn](https://danielkorn.io/post/git-restore/)
+:::
+
 ::: notes
 Also, this history is always available (no matter what). So it is a backup
 system that protects us against dramatic errors that make us lose the work done.
@@ -321,6 +330,11 @@ system that protects us against dramatic errors that make us lose the work done.
 Fear not "moving forward"!
 
 ![](../www/documentation.png){fig-align="center" height="450"}
+
+::: aside
+Taken from
+[Medium.com](https://medium.com/@lanceharvieruntime/version-control-why-do-we-need-it-1681f4888cec)
+:::
 
 ::: notes
 What does this mean? We don't need to be held back to make changes by fear of
@@ -335,7 +349,12 @@ without fear thanks to another important feature...
 
 ## Parallel histories
 
-![](../www/back-to-the-future-ii.jpg){fig-align="center" height="600"}
+![](../www/back-to-the-future-ii.jpg){fig-align="center" height="520"}
+
+::: aside
+Taken from
+[Cinemaclock](https://www.cinemaclock.com/movies/back-to-the-future-part-ii-1989)
+:::
 
 ::: notes
 Do you recognize this film?
@@ -349,13 +368,34 @@ This is exactly what "branching" does: Creating a "parallel history".
 
 Branching:
 
-![](../www/git-branch.PNG){fig-align="center" height="620"}
+::: columns
+::: {.column width="60%"}
+![](../www/git-branch.PNG){.absolute top="140" width="65%"}
+:::
 
--   Review
-
+::: {.column width="40%"}
+::: fragment
 -   Experiment
 
+<br>
+:::
+
+::: fragment
+-   Review
+
+<br>
+:::
+
+::: fragment
 -   Integrate / dismiss
+:::
+:::
+:::
+
+::: aside
+Taken from
+[dev.to](https://dev.to/vatsalyagoel/rewriting-git-history-being-opinionated-about-git-2bn1)
+:::
 
 ::: notes
 The ability to "suggest changes" in parallel...
@@ -373,18 +413,27 @@ That's how far the "Back to the future" metaphor goes though.
 (NEXT)
 
 Because then, if we are satisfied with the new changes, and maybe gather enough
-consensus, we can merge these new changes with the main history, so the changes
-go to the final output.
+consensus, ...
 :::
 
 ## Parallel histories
 
 Merging a branch:
 
-![](../www/merge-branch.png){fig-align="center" height="100%"}
+<br>
+
+![](../www/git-tree.png){fig-align="center" height="100%"}
+
+::: aside
+Taken from
+[dev.to](https://dev.to/vatsalyagoel/rewriting-git-history-being-opinionated-about-git-2bn1)
+:::
 
 ::: notes
-Or of course, we can just abandon that branch, if we thing we have come to a
+we can merge these new changes with the main history, so the changes go to the
+final output.
+
+Or of course, we could just abandon that branch, if we thing we have come to a
 dead end, or we are not satisfied with the result.
 
 However, one thing is very important, whether we merge our parallel to the main
@@ -394,17 +443,31 @@ history or not: Nothing is ever lost (unless we want it to, of course).
 ## Reproducibility
 
 ::: columns
-::: column
-![](../www/the_difference.png){fig-align="center" height="100%"}
+::: {.column width="50%"}
+![](../www/the_difference.png){fig-align="center" height="520"}
 :::
 
-::: column
+::: {.column width="50%"}
+::: fragment
 -   ... of results
 
+<br>
+:::
+
+::: fragment
 -   Replicability
 
+<br>
+:::
+
+::: fragment
 -   Transparency
 :::
+:::
+:::
+
+::: aside
+Taken from [XKCD](https://xkcd.com/242/)
 :::
 
 ::: notes
@@ -424,7 +487,7 @@ But there is something beyond that...
 
 (NEXT)
 
-which I like to call transparency.
+which I would call transparency.
 :::
 
 ## Reproducibility
@@ -436,7 +499,8 @@ which I like to call transparency.
 > stakeholders that ultimately lead to that final output. All of these things
 > make up the design process.\
 
---Josh Brewer
+---[Josh Brewer \@
+Abstract.com](https://www.abstract.com/blog/version-history-version-control)
 
 ::: notes
 Have a look at this quote.
@@ -444,10 +508,19 @@ Have a look at this quote.
 It is taken from a web design blog; it is not about scientific research, but I
 can't stress enough how true it is when we apply it to scientific research.
 
-Let me read it, "translating" it to "scientific jargon".
+Let me read it, "translating" it to "scientific jargon":
 
-This is, in my opinion, the most important feature of version control:
-Reproducibility (or better, transparency) of workflows, not only results.
+When most people think about science, they often think of it as just the final
+output: the paper. What they don't see, or aren't aware of, is all of the work
+that goes into identifying and articulating the problem, gathering data,
+planning, consensus-building, decision-making, conversations with stakeholders,
+writing data analysis pipelines, protocols, grant applications, ethical
+clearance applications, or manuscript drafts, reviewing those drafts, etc...,
+that ultimately lead to that final output. All of these things make up the
+research process.
+
+This is, in my opinion, the most important feature of version control: Not just
+reproducibility (of results only), but transparency of workflows.
 :::
 
 # Why not version control...?
@@ -460,9 +533,15 @@ reproducible and transparent workflow.
 Why is not everybody in academia using it?
 :::
 
-## Designed for software engineering
+## Design
 
-![](../www/bryan.jpg){fig-align="center" height="100%"}
+(for software engineering)
+
+![](../www/bryan.jpg){fig-align="center" height="450"}
+
+::: aside
+Taken from [LOLPics.com](https://lolpics.com/)
+:::
 
 ::: notes
 The main reason is this: Version control was built by SW engineers, for SW
@@ -477,9 +556,16 @@ Of course one does not need to learn commands, because git (and all version
 control systems, for that matter)...
 :::
 
-# 
+## Design
 
-![](../www/git-gui.jpg){fig-align="center" height="100%"}
+GUIs can be a great help
+
+![](../www/git-gui.jpg){fig-align="center" height="400"}
+
+::: aside
+By [Lulu Ilmaknun
+Qurotaini](https://medium.com/@lulu.ilmaknun.q/kompilasi-meme-git-e2fe49c6e33e)
+:::
 
 ::: notes
 have graphical user interfaces to make our life simpler. Later on we will see
@@ -490,9 +576,16 @@ having to learn commands.
 Even though...
 :::
 
-## Learning curve
+## Design
+
+Slow learning curve
 
 ![](../www/understand-git.jpg){fig-align="center" height="100%"}
+
+::: aside
+By [Lulu Ilmaknun
+Qurotaini](https://medium.com/@lulu.ilmaknun.q/kompilasi-meme-git-e2fe49c6e33e)
+:::
 
 ::: notes
 learning to use these version control systems is difficult. And it takes time.
