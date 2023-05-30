@@ -10,6 +10,7 @@ format:
     fig-cap-location:        bottom
     transition:              none
     incremental:             false
+    auto-stretch:            false
     link-external-newwindow: true
     preview-links:           false
     preload-iframes:         true
@@ -71,8 +72,6 @@ versions of their work are...
 -   Did I take into account the reviews of all co-authors?
 
 . . .
-
-</br>
 
 -   other ones... ?
 
@@ -179,8 +178,6 @@ Do you use any service or system to share files, and/or file naming conventions?
 
 -   Duplicated effort
 
-</br>
-
 . . .
 
 -   other problems... ?
@@ -236,7 +233,7 @@ Let's see the features of version control systems, and why they are useful.
 
 ## Collaboration
 
-![](../www/git-collaboration.png){fig-align="center" height="100%"}
+![](../www/git-collaboration.png){fig-align="center" height="520"}
 
 ::: aside
 From [cPanel
@@ -680,7 +677,12 @@ better than nothing.
 
 ## Oversharing
 
-![](../www/oversharing.png){fig-align="center"}
+![](../www/oversharing.png){fig-align="center" height="520"}
+
+::: aside
+From [Digital information
+world](https://www.digitalinformationworld.com/2015/10/infographic-oversharing-your-biggest-security-risk-could-be-you.html)
+:::
 
 ::: notes
 Another important source of concern is the possibility to "version" sensitive
@@ -699,7 +701,11 @@ deleted from the history.
 
 ## Time required
 
-![](../www/meaningful_message.png){fig-align="center"}
+![](../www/meaningful_message.png){fig-align="center" height="520"}
+
+::: aside
+From [Work Chronicles](https://workchronicles.com/commit-messages/)
+:::
 
 ::: notes
 Lastly, using version control is time-consuming. You need to dedicate effort to
@@ -709,7 +715,12 @@ documenting "why" you do the changes you do...
 
 ## Time required
 
-![](../www/git-fire.jpg){fig-align="center"}
+![](../www/git-fire.jpg){fig-align="center" height="520"}
+
+::: aside
+From
+[Funnyjokes.co.in](https://funnyjokes.co.in/in-case-of-fire-funny-jokes-funny-images/)
+:::
 
 ::: notes
 ...and another one is to actually creating an iteration ("committing" the
@@ -722,7 +733,14 @@ the last problem: conflicts.
 
 ## Conflicts
 
-![](../www/merge-conflict.png){fig-align="center"}
+<br>
+
+![](../www/merge-conflict.png){fig-align="center" width="100%"}
+
+::: aside
+From
+[Neoscience.org](https://www.neonscience.org/resources/learning-hub/tutorials/git-setup-remote)
+:::
 
 ::: notes
 These conflicts occur (usually) when two people edit the same line of the same
@@ -732,7 +750,11 @@ choosing one version, the other, or a mix of both.
 
 ## Conflicts
 
-![](../www/conflicts-headache.jpg){fig-align="center"}
+![](../www/conflicts-headache.jpg){fig-align="center" height="520"}
+
+::: aside
+By [TANAYKAMATH](https://imgflip.com/i/471xbc)
+:::
 
 ::: notes
 But more than time-consuming (which they are) merge conflicts are scary and
@@ -745,7 +767,12 @@ So after all these, one may wonder if it is worth using version control systems.
 
 ## Why not version control?
 
-![](../www/marshmallow.jpg){fig-align="center"}
+![](../www/marshmallow.jpg){fig-align="center" height="520"}
+
+::: aside
+From [Dr.
+Deb](https://drdeborahserani.blogspot.com/2009/09/marshmallow-test.html)
+:::
 
 ::: notes
 In my view (and that of people who advocate for this), version control provides
@@ -789,9 +816,9 @@ of how to use it.
 So...
 :::
 
-## 
+## Thanks! - Tack så mycket! - ¡Gracias!
 
-![](../www/flowchart.png){fig-align="center"}
+![](../www/flowchart.png){fig-align="center" height="450"}
 
 ::: notes
 Why not use it?
