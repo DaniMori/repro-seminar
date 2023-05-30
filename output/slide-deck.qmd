@@ -820,6 +820,10 @@ So...
 
 ![](../www/flowchart.png){fig-align="center" height="450"}
 
+::: aside
+From [Soundsoftware.co.uk](http://soundsoftware.ac.uk/why-version-control)
+:::
+
 ::: notes
 Why not use it?
 :::
