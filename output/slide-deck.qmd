@@ -639,7 +639,9 @@ are separated in "lines of text".
 
 ## File types
 
-![](../www/commit-changes-example.png){fig-align="center"}
+Tracking changes:
+
+![](../www/commit-changes-example.png){fig-align="center" height="500"}
 
 ::: notes
 In this example you can easily see why: The system identifies which lines have
@@ -657,11 +659,11 @@ literate computing, and can translate easily to word, PDF, LaTeX, etc.
 
 ::: columns
 ::: column
-![](../www/rtf-file.png){fig-align="center"}
+![](../www/rtf-file.png){fig-align="center" height="500"}
 :::
 
 ::: column
-![](../www/commit-changes-RTF.png){fig-align="center"}
+![](../www/commit-changes-RTF.png){fig-align="center" height="500"}
 :::
 :::
 
