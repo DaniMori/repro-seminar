@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # Load data:
-dataset <- read_csv2("www/some_data.csv")
+dataset <- read_csv2("dat/some_data.csv")
 
 # Explore dataset:
 dataset
