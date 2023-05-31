@@ -119,7 +119,7 @@ So, there are several ways of sorting this out.
 
 ::: columns
 ::: {.column width="60%"}
-![](../www/swith_to_vc.jpg){fig-align="center" height="100%"}
+![](../www/switch_to_vc.jpg){fig-align="center" height="100%"}
 :::
 
 ::: {.column width="40%"}
@@ -207,7 +207,7 @@ What other problemas have you found when using a manual versioning system?
 
 ## Version control
 
-![](../www/verion-control-systems.png){fig-align="center"}
+![](../www/version-control-systems.png){fig-align="center"}
 
 ::: aside
 From
@@ -472,9 +472,9 @@ And this is very important in research, right?
 
 (NEXT)
 
-Because our results will of course be reproducible: We can also our code (or our
-whole project, for that matter) and see if we arrive at the same results we have
-reported.
+Because our results will of course be reproducible: We can also re-run our code
+(or our whole project, for that matter) and see if we arrive at the same results
+we have reported.
 
 (NEXT)
 
