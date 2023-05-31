@@ -2,22 +2,24 @@
 title:       "Version control for reproducible research and collaboration"
 subtitle:    "An overview of git + Github in scientific workflows"
 date:        2023-06-09
-date-format: short
+date-format: long
 author:      |
   Daniel Morillo, Ph.D.\
   [![](../www/GitHub-Logo.png){height="50"}](https://github.com/DaniMori/)
   [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
-institute:   Network-based Biomedical Research Consortium - Mental Health
+institute:   |
+  Network-based Biomedical Research Consortium (Mental Health)\
+  [![](../www/cibersam.png){height="80"}](https://www.cibersam.es/)
 format:
   revealjs:
-    slide-number:            false
-    fig-cap-location:        bottom
-    transition:              none
-    incremental:             false
-    auto-stretch:            false
-    self-contained:          true
-    theme:                   ../www/styles.css
-    view-distance:                3
+    slide-number:     false
+    fig-cap-location: bottom
+    transition:       none
+    incremental:      false
+    auto-stretch:     false
+    self-contained:   true
+    theme:            ../www/styles.css
+    view-distance:    3
     template-partials:
       - ../www/title-slide.html
 knitr: true
