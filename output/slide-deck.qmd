@@ -843,7 +843,19 @@ of how to use it.
 So...
 :::
 
-# Thanks! - Tack så mycket! - ¡Gracias!
+##  {.center}
+
+::: {#title-slide .center}
+### Thanks!
+
+<br>
+
+### Tack så mycket!
+
+<br>
+
+### ¡Gracias!
+:::
 
 ::: notes
 Why not use it?
