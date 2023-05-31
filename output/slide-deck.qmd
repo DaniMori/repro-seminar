@@ -444,6 +444,8 @@ history or not: Nothing is ever lost (unless we want it to, of course).
 :::
 
 ::: {.column width="50%"}
+<br>
+
 ::: fragment
 -   ... of results
 
@@ -454,10 +456,6 @@ history or not: Nothing is ever lost (unless we want it to, of course).
 -   Replicability
 
 <br>
-:::
-
-::: fragment
--   Transparency
 :::
 :::
 :::
@@ -479,14 +477,35 @@ we have reported.
 
 Moreover, replicability is easy: We "only" need the same code and a new dataset.
 
-But there is something beyond that...
-
-(NEXT)
-
-which I would call transparency.
+Well, these two are not 100% true: We need the data (same or new), and the code,
+but (those who work in R will be familiar with this), what else do we need?
 :::
 
 ## Reproducibility
+
+![](../www/r-packages.png){fig-align="center" height="520"}
+
+::: aside
+From [javapoint](https://www.javatpoint.com/list-of-r-packages)
+:::
+
+::: notes
+The environment. For strict reproducibility we need the same version of our
+software. In the case of R, python, or other statistical computing languages, we
+need to make sure we also have the correct versions of all the packages.
+
+This is not a feature of version control per se, but it helps with it. In the
+case of R (and Python for that matter), there are helper packages allow to
+record the state of the environment (packages and their version) in a file
+within the version control system, which can then be shared and reproduced by
+collaborators (or even yourself in a new machine!) You can't imagine how much of
+a time-saver (and "error-saver") is this.
+
+So, version control improves reproducibility, and replicability. But there is
+something beyond that, which is becoming a trend nowadays: Transparency.
+:::
+
+## Transparency
 
 > When most people think about design, they often think of it as just the final
 > output: the screens. What they don't see, or aren't aware of, is all of the
