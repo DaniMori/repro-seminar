@@ -3,10 +3,11 @@ title:       "Version control for reproducible research and collaboration"
 subtitle:    "An overview of git + Github in scientific workflows"
 date:        2023-06-09
 date-format: short
-author:      "[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)"
+author:      |
+  Daniel Morillo, Ph.D.\
+  [![](../www/GitHub-Logo.png){height="50"}](https://github.com/DaniMori/)
+  [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
 institute:   Network-based Biomedical Research Consortium - Mental Health
-title-slide-attributes:
-  data-background-color: "#4F0433"
 format:
   revealjs:
     slide-number:            false
@@ -15,25 +16,15 @@ format:
     incremental:             false
     auto-stretch:            false
     self-contained:          true
-    theme:                   simple
+    theme:                   ../www/styles.css
     view-distance:                3
+    template-partials:
+      - ../www/title-slide.html
+knitr: true
 ---
-
-```{r setup}
-library(htmltools)
-```
 
 # Intro: Why version control?
 
-```{=html}
-<!--  ## Introduction
-
-<br>
-
-[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)
-
-Postdoctoral Researcher \@ [CiberSam](https://www.cibersam.es/en) -->
-```
 ## Problem:
 
 ![](../www/phd_versions.png){fig-align="center" height="520"}
