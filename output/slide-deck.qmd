@@ -5,16 +5,15 @@ date:        2023-06-09
 date-format: short
 author:      "[Daniel Morillo, Ph.D.](https://orcid.org/0000-0003-3021-3878)"
 institute:   Network-based Biomedical Research Consortium - Mental Health
+title-slide-attributes:
+  data-background-color: "#4F0433"
 format:
   revealjs:
-    slide-number:            true
+    slide-number:            false
     fig-cap-location:        bottom
     transition:              none
     incremental:             false
     auto-stretch:            false
-    link-external-newwindow: true
-    preview-links:           false
-    preload-iframes:         true
     self-contained:          true
     theme:                   simple
     view-distance:                3
