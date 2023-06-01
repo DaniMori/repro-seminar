@@ -18,7 +18,7 @@ format:
     incremental:      false
     auto-stretch:     false
     self-contained:   true
-    theme:            ../www/styles.css
+    theme:            ../www/extra-styles.scss
     view-distance:    3
     template-partials:
       - ../www/title-slide.html
