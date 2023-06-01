@@ -149,7 +149,7 @@ To allow sharing files, we can store them in cloud services or network units...
 (NEXT)
 
 and implement some file naming conventions to keep track of the different
-versions. Unlike this guy (picture), we can e.g. preffix the naem with a date,
+versions. Unlike this guy (picture), we can e.g. preffix the name with a date,
 suffix with a version number, or with the initials of the last reviewer...
 
 Do you use any service or system to share files, and/or file naming conventions?
@@ -209,7 +209,7 @@ From
 ::: notes
 Well, for these reasons, version control systems were created. Thre are many
 different systems, but we are going to focus here on git, because it is open
-source, very popular among the research community, and also because it allows to
+source, very popular among the research community, and also because it allows
 using Github as a centralized server, which has many nice features that we will
 see later on.
 
@@ -273,22 +273,22 @@ From [Office Timeline](https://www.officetimeline.com/blog/nobel-prize-timeline)
 :::
 
 ::: notes
-This is an example of a timeline, with specific events at a certain point in
+This is an example of a timeline, with specific events at certain points in
 time. This is the analogy you need to keep in mind to understand what a version
 control system is.
 
 In essence, it is a history of the changes in a project (or a "repository", in
 the version control jargon).
 
-With this timeline, we have the information about what has changed. There are
-even ways in which you can "version control" your environment, so that someone
-else knows for example which R packages and which versions they need to use.
+(NEXT)
+
+With this timeline, we have the information about what has changed, but also
+when (for example, seeing the timeline we may know what results are affected if
+an analysis script has changed, and whether they need to be updated),...
 
 (NEXT)
 
-but also when (for example, seeing the timeline we may know what results are
-affected if an analysis script has changed, and whether they need to be
-updated),... why (this can help provide a lot of knowledge),
+why (this can help provide a lot of knowledge),
 
 (NEXT)
 
@@ -330,7 +330,7 @@ What does this mean? We don't need to be held back to make changes by fear of
 deleting something important.
 
 Also, we don't need to be documenting our "previous versions" in obscure ways,
-as this poor guy is doing. This implies even updating the environment.
+as this poor guy is doing.
 
 However, let's say we are not sure about our changes, we want to make
 "experimental" changes. We can still make progress without fear of breaking
@@ -381,8 +381,14 @@ conflicting with what is already done.
 
 (NEXT)
 
+We can also review these changes, or ask other people to review and maybe update
+them, in this "parallel history".
+
+(NEXT)
+
 Then, if we are satisfied with the new changes, and maybe gather enough
-consensus, ...
+consensus, we can integrate those changes, or dismiss them if we don't want to
+make them part of our main outome.
 :::
 
 ## Parallel histories
@@ -399,10 +405,10 @@ From
 :::
 
 ::: notes
-...we can merge these new changes with the main history, so the changes go to
-the final output.
+This is what "integrating" looks like: The "experimental" branch is merged to
+the "trunk" or "main history".
 
-Or of course, we could just abandon that branch, if we thing we have come to a
+Or of course, we could just abandon that branch, if we think we have come to a
 dead end, or we are not satisfied with the result.
 
 However, one important thing, whether we merge our parallel history to the main
@@ -636,10 +642,11 @@ Tracking changes:
 In this example you can easily see why: The system identifies which lines have
 changed, and marks them as "added" or "deleted".
 
-For this reason, it is always better to use text-based formats. Otherwise, git
-needs to mark the whole file as "changed" when a binary file is updated. The
-"state-of-the-art" formats for scientific writing nowadays allow so-called
-literate computing, and can translate easily to word, PDF, LaTeX, etc.
+For this reason, it is always better to use text-based formats. Otherwise, the
+VC system needs to mark the whole file as "changed" when a binary file is
+updated. The "state-of-the-art" formats for scientific writing nowadays, that
+allow so-called literate computing, and can translate easily to word, PDF,
+LaTeX, etc.
 :::
 
 ## File types
@@ -680,15 +687,15 @@ world](https://www.digitalinformationworld.com/2015/10/infographic-oversharing-y
 Another important source of concern is the possibility to "version" sensitive
 information accidentally. Because a repository is usually shared among
 colleagues, and eventually can be made public to share it with the whole
-research community, those data should always be kept out of repositories.
+research community, that information should always be kept out of repositories.
 
 Version control has the risk of exposing passwords or research participant data,
 due to human errors. But these risks are mitigated by having a good repository
 structure and file access policies.
 
 "Ignore files", relative paths to external folders, and private repositories are
-the tools to avoid these errors. And if they happen, commits can always be
-deleted from the history.
+the tools to avoid these errors. And if they happen, a certain version can
+always be deleted from the history, as I told you before.
 :::
 
 ## Time required
@@ -738,6 +745,9 @@ From
 These conflicts occur (usually) when two people edit the same line of the same
 file in parallel. When that happens, one needs to resolve the conflicts by
 choosing one version, the other, or a mix of both.
+
+But more than time-consuming (which they are) merge conflicts are scary and
+annoying.
 :::
 
 ## Conflicts
@@ -749,12 +759,12 @@ By [TANAYKAMATH](https://imgflip.com/i/471xbc)
 :::
 
 ::: notes
-But more than time-consuming (which they are) merge conflicts are scary and
-annoying. But they can be avoided by having a clear understanding of what one is
-doing, and having good versioning policies, for example creating explicit rules
-for branching and committing.
+But they can be avoided by having a clear understanding of what one is doing,
+and having good versioning policies, for example creating explicit rules for
+branching and committing.
 
-So after all these, one may wonder if it is worth using version control systems.
+So after all these disadvantages, one may wonder if it is worth using version
+control systems.
 :::
 
 ## Why not version control?
@@ -782,7 +792,21 @@ So, how does version control actually work?
 
 We are going to see an example, using git.
 
-(GO TO RSTUDIO, EXAMPLE OF STAGE, COMMIT)
+(GO TO RSTUDIO, EXAMPLE OF STAGE, COMMIT):
+
+Edit file `src/Analyses.R`:
+
+1.  Run script
+
+2.  Delete lines 10-14
+
+3.  Commit changes
+
+4.  Modify lines 17-18 (now 12-13, adding argument `na.rm = TRUE`)
+
+5.  Run script again
+
+6.  Commit changes
 
 (SHOW HISTORY)
 
@@ -797,6 +821,11 @@ branch to the "main" history. In this "pull request" we see a history of changes
 and, very conveniently, we can review the changes in this branch, compared to
 its base branch (the one we want to merge to). We can add comments, request
 changes, etc.
+
+Version control can save much time and effort, when one has a minimum knowledge
+of how to use it.
+
+So...
 :::
 
 ## In summary
@@ -810,10 +839,7 @@ From [Soundsoftware.co.uk](http://soundsoftware.ac.uk/why-version-control)
 :::
 
 ::: notes
-Version control can save much time and effort, when one has a minimum knowledge
-of how to use it.
-
-So...
+Why not start learning and use it?
 :::
 
 ##  {.center}
