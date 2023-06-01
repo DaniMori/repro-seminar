@@ -332,25 +332,9 @@ deleting something important.
 Also, we don't need to be documenting our "previous versions" in obscure ways,
 as this poor guy is doing. This implies even updating the environment.
 
-However, if we are not sure about our changes, we can still make progress
-without fear thanks to another important feature...
-:::
-
-## Parallel histories
-
-![](../www/back-to-the-future-ii.jpg){fig-align="center" height="520"}
-
-::: aside
-From
-[Cinemaclock](https://www.cinemaclock.com/movies/back-to-the-future-part-ii-1989)
-:::
-
-::: notes
-Do you recognize this film?
-
-(PAUSE AND EXPLAIN)
-
-This is exactly what "branching" does: Creating a "parallel history".
+However, let's say we are not sure about our changes, we want to make
+"experimental" changes. We can still make progress without fear of breaking
+things up thanks to another important feature...
 :::
 
 ## Parallel histories
@@ -387,21 +371,17 @@ From
 :::
 
 ::: notes
-The ability to "suggest changes" in parallel...
+By creating "branches", we can "suggest changes" in parallel...
 
 (NEXT)
 
-or do "experiments", without affecting the main outcome of our project, is a
-very prominent feature of VC.
-
-This way, we can "change things" without the fear of conflicting with what is
-already done.
-
-That's how far the "Back to the future" metaphor goes though.
+or do "experiments", without affecting the main outcome of our project. This is
+also a very prominent feature of VC: We can "change things" without the fear of
+conflicting with what is already done.
 
 (NEXT)
 
-Because then, if we are satisfied with the new changes, and maybe gather enough
+Then, if we are satisfied with the new changes, and maybe gather enough
 consensus, ...
 :::
 
@@ -419,14 +399,14 @@ From
 :::
 
 ::: notes
-we can merge these new changes with the main history, so the changes go to the
-final output.
+...we can merge these new changes with the main history, so the changes go to
+the final output.
 
 Or of course, we could just abandon that branch, if we thing we have come to a
 dead end, or we are not satisfied with the result.
 
-However, one thing is very important, whether we merge our parallel to the main
-history or not: Nothing is ever lost (unless we want it to, of course).
+However, one important thing, whether we merge our parallel history to the main
+one or not: Nothing is ever lost (unless we really wanted it to, of course).
 :::
 
 ## Reproducibility
