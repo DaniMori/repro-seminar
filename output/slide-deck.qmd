@@ -848,16 +848,16 @@ Why not start learning and use it?
 
 ### Level:
 
--   **Thor/Sif:** [First Steps in Learning the Use of Git & GitHub in
+0.  [First Steps in Learning the Use of Git & GitHub in
     RStudio](https://www.youtube.com/watch?v=jN6tvgt3GK8) by [Mouna
     Belaid](https://mounabelaid.netlify.app/) \@ [Posit
     PBC](https://www.youtube.com/@PositPBC)
 
--   **Odin/Frigg:** Version control Workshop by Daniel and Emma (stay tuned!)
+1.  Workshop by Daniel and Emma, for R users (stay tuned!)
 
--   **Borr/Bestla:** [Building reproducible analytical pipelines with
+2.  [Building reproducible analytical pipelines with
     R](https://raps-with-r.dev/) by [Bruno
-    Rodrigues](https://www.brodrigues.co/)
+    Rodrigues](https://www.brodrigues.co/about/me/)
 
 <br>
 
