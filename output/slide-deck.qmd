@@ -282,9 +282,13 @@ the version control jargon).
 
 (NEXT)
 
-With this timeline, we have the information about what has changed, but also
-when (for example, seeing the timeline we may know what results are affected if
-an analysis script has changed, and whether they need to be updated),...
+With a timeline like this, we have the information about what has changed, ...
+
+(NEXT)
+
+but also when (for example, seeing the timeline we may know what results are
+affected if an analysis script has changed, and whether they need to be
+updated), ...
 
 (NEXT)
 
@@ -386,9 +390,8 @@ them, in this "parallel history".
 
 (NEXT)
 
-Then, if we are satisfied with the new changes, and maybe gather enough
-consensus, we can integrate those changes, or dismiss them if we don't want to
-make them part of our main outome.
+Then, if we are satisfied with the new changes we can integrate them, or dismiss
+them if we don't want to make them part of our main outcome.
 :::
 
 ## Parallel histories
@@ -411,8 +414,9 @@ the "trunk" or "main history".
 Or of course, we could just abandon that branch, if we think we have come to a
 dead end, or we are not satisfied with the result.
 
-However, one important thing, whether we merge our parallel history to the main
-one or not: Nothing is ever lost (unless we really wanted it to, of course).
+However, whether we merge our parallel history to the main one or not, remember
+what we said before: Nothing is ever lost (unless we really wanted it to, of
+course).
 :::
 
 ## Reproducibility
@@ -473,12 +477,12 @@ The environment. For strict reproducibility we need the same version of our
 software. In the case of R, python, or other statistical computing languages, we
 need to make sure we also have the correct versions of all the packages.
 
-This is not a feature of version control per se, but it helps with it. In the
-case of R (and Python for that matter), there are helper packages allow to
+This is not a feature of version control itself, but it helps with it. In the
+case of R (and Python for that matter), there are helper packages that allow to
 record the state of the environment (packages and their version) in a file
 within the version control system, which can then be shared and reproduced by
-collaborators (or even yourself in a new machine!) You can't imagine how much of
-a time-saver (and "error-saver") is this.
+collaborators (or even yourself in a new machine!). You can't imagine how much
+of a time-saver (and "error-saver") is this.
 
 So, version control improves reproducibility, and replicability. But there is
 something beyond that, which is becoming a trend nowadays: Transparency.
@@ -585,9 +589,6 @@ Qurotaini](https://medium.com/@lulu.ilmaknun.q/kompilasi-meme-git-e2fe49c6e33e)
 learning to use these version control systems is difficult. And it takes time.
 This implies there will be errors, moreover in the beginning, and issues that
 will be difficult to solve.
-
-To give you an estimate, I would say that the investment starts paying off
-around the third article done in version control.
 :::
 
 ## File types
@@ -693,9 +694,9 @@ Version control has the risk of exposing passwords or research participant data,
 due to human errors. But these risks are mitigated by having a good repository
 structure and file access policies.
 
-"Ignore files", relative paths to external folders, and private repositories are
-the tools to avoid these errors. And if they happen, a certain version can
-always be deleted from the history, as I told you before.
+We have several tools to avoid this: "Ignoring files", relative paths to
+external folders, and private repositories. And if errors happen after all, a
+certain version can always be deleted from the history, as I told you before.
 :::
 
 ## Time required
@@ -707,8 +708,8 @@ From [Work Chronicles](https://workchronicles.com/commit-messages/)
 :::
 
 ::: notes
-Lastly, using version control is time-consuming. You need to dedicate effort to
-additional things, aside from your "significant work". One of them is
+Lastly, using version control is time-consuming. Aside from your "significant
+work", you need to dedicate effort to additional things. One of them is
 documenting "why" you do the changes you do...
 :::
 
@@ -746,8 +747,7 @@ These conflicts occur (usually) when two people edit the same line of the same
 file in parallel. When that happens, one needs to resolve the conflicts by
 choosing one version, the other, or a mix of both.
 
-But more than time-consuming (which they are) merge conflicts are scary and
-annoying.
+But more than time-consuming (which they are) merge conflicts are...
 :::
 
 ## Conflicts
@@ -759,12 +759,14 @@ By [TANAYKAMATH](https://imgflip.com/i/471xbc)
 :::
 
 ::: notes
+scary and annoying.
+
 But they can be avoided by having a clear understanding of what one is doing,
 and having good versioning policies, for example creating explicit rules for
 branching and committing.
 
-So after all these disadvantages, one may wonder if it is worth using version
-control systems.
+So after all these disadvantages, one may wonder if version control systems is
+worth the effort.
 :::
 
 ## Why not version control?
@@ -840,6 +842,30 @@ From [Soundsoftware.co.uk](http://soundsoftware.ac.uk/why-version-control)
 
 ::: notes
 Why not start learning and use it?
+:::
+
+## Next steps in VC {.smaller}
+
+### Level:
+
+-   **Thor/Sif:** [First Steps in Learning the Use of Git & GitHub in
+    RStudio](https://www.youtube.com/watch?v=jN6tvgt3GK8) by [Mouna
+    Belaid](https://mounabelaid.netlify.app/) \@ [Posit
+    PBC](https://www.youtube.com/@PositPBC)
+
+-   **Odin/Frigg:** Version control Workshop by Daniel and Emma (stay tuned!)
+
+-   **Borr/Bestla:** [Building reproducible analytical pipelines with
+    R](https://raps-with-r.dev/) by [Bruno
+    Rodrigues](https://www.brodrigues.co/about/me/)
+
+<br>
+
+::: fragment
+### Bonus skill:
+
+-   **Ymir:** [Learn to use the
+    keyboard!](https://www.taskade.com/blog/history-keyboard-shortcuts-productivity/)
 :::
 
 ##  {.center}
