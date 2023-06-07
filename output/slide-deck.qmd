@@ -848,14 +848,14 @@ Why not start learning and use it?
 
 ### Level:
 
--   **Thor/Sif:** [First Steps in Learning the Use of Git & GitHub in
+0.  [First Steps in Learning the Use of Git & GitHub in
     RStudio](https://www.youtube.com/watch?v=jN6tvgt3GK8) by [Mouna
     Belaid](https://mounabelaid.netlify.app/) \@ [Posit
     PBC](https://www.youtube.com/@PositPBC)
 
--   **Odin/Frigg:** Version control Workshop by Daniel and Emma (stay tuned!)
+1.  Workshop by Daniel and Emma, for R users (stay tuned!)
 
--   **Borr/Bestla:** [Building reproducible analytical pipelines with
+2.  [Building reproducible analytical pipelines with
     R](https://raps-with-r.dev/) by [Bruno
     Rodrigues](https://www.brodrigues.co/about/me/)
 
@@ -864,14 +864,14 @@ Why not start learning and use it?
 ::: fragment
 ### Bonus skill:
 
--   **Ymir:** [Learn to use the
+-   [Learn to use the
     keyboard!](https://www.taskade.com/blog/history-keyboard-shortcuts-productivity/)
 :::
 
 ##  {.center}
 
 ::: {#title-slide .center}
-### Thanks!
+### Many thanks!
 
 <br>
 
@@ -879,7 +879,7 @@ Why not start learning and use it?
 
 <br>
 
-### ¡Gracias!
+### ¡Muchas gracias!
 :::
 
 ::: notes
