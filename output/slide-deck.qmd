@@ -871,7 +871,7 @@ Why not start learning and use it?
 ##  {.center}
 
 ::: {#title-slide .center}
-### Thanks!
+### Many thanks!
 
 <br>
 
@@ -879,7 +879,7 @@ Why not start learning and use it?
 
 <br>
 
-### ¡Gracias!
+### ¡Muchas gracias!
 :::
 
 ::: notes
