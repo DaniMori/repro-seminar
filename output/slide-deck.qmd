@@ -864,7 +864,7 @@ Why not start learning and use it?
 ::: fragment
 ### Bonus skill:
 
--   **Ymir:** [Learn to use the
+-   [Learn to use the
     keyboard!](https://www.taskade.com/blog/history-keyboard-shortcuts-productivity/)
 :::
 
