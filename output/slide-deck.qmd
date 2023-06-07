@@ -347,7 +347,7 @@ Branching:
 
 ::: columns
 ::: {.column width="60%"}
-![](../www/git-branch.PNG){.absolute top="140" width="65%"}
+![](../www/git-branch.png){.absolute top="140" width="65%"}
 :::
 
 ::: {.column width="40%"}
