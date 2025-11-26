@@ -109,12 +109,12 @@ So, there are several ways of sorting this out.
 
 ## Manual versioning {.smaller .nonincremental}
 
-::: columns
+::::::: columns
 ::: {.column width="60%"}
 ![](../www/switch_to_vc.jpg){fig-align="center" height="100%"}
 :::
 
-::: {.column width="40%"}
+::::: {.column width="40%"}
 </br>
 
 ::: fragment
@@ -130,8 +130,8 @@ So, there are several ways of sorting this out.
 ::: fragment
 -   File naming conventions
 :::
-:::
-:::
+:::::
+:::::::
 
 ::: aside
 *Git, SVN or ...?* by
@@ -244,12 +244,12 @@ contribute, and reuse the work of one another.
 
 ## History of changes
 
-::: columns
+::::::::: columns
 ::: {.column width="80%"}
 ![](../www/Nobel-Prize-Timeline.png){fig-align="center" height="100%"}
 :::
 
-::: {.column width="20%"}
+::::::: {.column width="20%"}
 ::: fragment
 -   What
 :::
@@ -265,8 +265,8 @@ contribute, and reuse the work of one another.
 ::: fragment
 -   Who
 :::
-:::
-:::
+:::::::
+:::::::::
 
 ::: aside
 From [Office Timeline](https://www.officetimeline.com/blog/nobel-prize-timeline)
@@ -345,12 +345,12 @@ things up thanks to another important feature...
 
 Branching:
 
-::: columns
+:::::::: columns
 ::: {.column width="60%"}
-![](../www/git-branch.PNG){.absolute top="140" width="65%"}
+![](../www/git-branch.png){.absolute top="140" width="65%"}
 :::
 
-::: {.column width="40%"}
+:::::: {.column width="40%"}
 ::: fragment
 -   Experiment
 
@@ -366,8 +366,8 @@ Branching:
 ::: fragment
 -   Integrate / dismiss
 :::
-:::
-:::
+::::::
+::::::::
 
 ::: aside
 From
@@ -421,12 +421,12 @@ course).
 
 ## Reproducibility
 
-::: columns
+::::::: columns
 ::: {.column width="50%"}
 ![](../www/the_difference.png){fig-align="center" height="520"}
 :::
 
-::: {.column width="50%"}
+::::: {.column width="50%"}
 <br>
 
 ::: fragment
@@ -440,8 +440,8 @@ course).
 
 <br>
 :::
-:::
-:::
+:::::
+:::::::
 
 ::: aside
 From [XKCD](https://xkcd.com/242/)
@@ -595,7 +595,7 @@ will be difficult to solve.
 
 Binary:
 
-::: columns
+::::: columns
 ::: {.column width="43%"}
 ![](../www/docx-example.png){.absolute top="140" height="510"}
 :::
@@ -604,7 +604,7 @@ Binary:
 ```{embed, file = "../www/docx-example.txt"}
 ```
 :::
-:::
+:::::
 
 ::: notes
 Another problem is that we are used to working with applications that store the
@@ -618,7 +618,7 @@ Text-based:
 
 <br>
 
-::: columns
+::::: columns
 ::: {.column align="center" width="25%"}
 :::
 
@@ -626,7 +626,7 @@ Text-based:
 ```{embed, file = "../www/textfile-example.md"}
 ```
 :::
-:::
+:::::
 
 ::: notes
 Version control works best with "text files". These are "human-readable", and
@@ -654,7 +654,7 @@ LaTeX, etc.
 
 "Rich Text Format" file type:
 
-::: columns
+::::: columns
 ::: column
 ![](../www/rtf-file.png){fig-align="center" height="500"}
 :::
@@ -662,7 +662,7 @@ LaTeX, etc.
 ::: column
 ![](../www/commit-changes-RTF.png){fig-align="center" height="500"}
 :::
-:::
+:::::
 
 ::: notes
 However, if you "insisted" on using Word for drafting manuscripts, a good
@@ -798,17 +798,19 @@ We are going to see an example, using git.
 
 Edit file `src/Analyses.R`:
 
-1.  Run script
+1.  Show in branch "main", then "feature/version-demo"
 
-2.  Delete lines 10-14
+2.  Run script
 
-3.  Commit changes
+3.  Delete lines 13-17
 
-4.  Modify lines 17-18 (now 12-13, adding argument `na.rm = TRUE`)
+4.  Commit changes
 
-5.  Run script again
+5.  Modify lines 20-21 (now 15-16, adding argument `na.rm = TRUE`)
 
-6.  Commit changes
+6.  Run script again
+
+7.  Commit changes
 
 (SHOW HISTORY)
 
@@ -848,14 +850,14 @@ Why not start learning and use it?
 
 ### Level:
 
--   **Thor/Sif:** [First Steps in Learning the Use of Git & GitHub in
+0.  [First Steps in Learning the Use of Git & GitHub in
     RStudio](https://www.youtube.com/watch?v=jN6tvgt3GK8) by [Mouna
     Belaid](https://mounabelaid.netlify.app/) \@ [Posit
     PBC](https://www.youtube.com/@PositPBC)
 
--   **Odin/Frigg:** Version control Workshop by Daniel and Emma (stay tuned!)
+1.  Workshop by Daniel and Emma, for R users (stay tuned!)
 
--   **Borr/Bestla:** [Building reproducible analytical pipelines with
+2.  [Building reproducible analytical pipelines with
     R](https://raps-with-r.dev/) by [Bruno
     Rodrigues](https://www.brodrigues.co/about/me/)
 
@@ -864,14 +866,14 @@ Why not start learning and use it?
 ::: fragment
 ### Bonus skill:
 
--   **Ymir:** [Learn to use the
+-   [Learn to use the
     keyboard!](https://www.taskade.com/blog/history-keyboard-shortcuts-productivity/)
 :::
 
 ##  {.center}
 
 ::: {#title-slide .center}
-### Thanks!
+### Many thanks!
 
 <br>
 
@@ -879,7 +881,7 @@ Why not start learning and use it?
 
 <br>
 
-### ¡Gracias!
+### ¡Muchas gracias!
 :::
 
 ::: notes
