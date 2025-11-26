@@ -26,6 +26,7 @@
 # Rmd outputs formats, other documents and files
 *.docx
 *.html
+!www/title-slide.html
 *.pdf
 
 # Directories and links
