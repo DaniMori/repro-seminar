@@ -12,6 +12,6 @@ dataset
 
 # Explore age range:
 dataset |> summarize(
-  age_min = min(age.min),
-  age_max = max(age.max)
+  age_min = min(age.min, na.rm = TRUE),
+  age_max = max(age.max, na.rm = TRUE)
 )
